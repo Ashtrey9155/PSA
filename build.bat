@@ -1,0 +1,2 @@
+start "" cordova build
+pause
