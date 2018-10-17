@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'EuropeDemi';
+	src: url('../fonts/euro-dn_1.eot');
+	src: local('☺'), url('../fonts/euro-dn_1.woff') format('woff'), url('../fonts/euro-dn_1.ttf') format('truetype'), url('../fonts/euro-dn_1.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Europe';
+	src: url('../fonts/euro-n_1.eot');
+	src: local('☺'), url('../fonts/euro-n_1.woff') format('woff'), url('../fonts/euro-n_1.ttf') format('truetype'), url('../fonts/euro-n_1.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font_style_my
+{
+	font-size: 3vh;
+	font-family: EuropeDemi;
+}
+
+.font_down_style_my
+{
+	font-size: 2vh;
+	font-family: Europe;
+	color: grey;
+}

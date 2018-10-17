@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
+    <title>Parashute Sport Assist</title>
+
+    <!-- Bootstrap -->  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/myfonts.css" rel="stylesheet"> 
+	<!-- <link href="css/mycss.css" rel="stylesheet"> -->
+	<link href="css/mymain.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->  
+  </head>
+  <body>
+  
+  
+    <div class="container-fluid">
+		<div class="row top_form">
+			<div class="col-xs-10 col-sm-10 col-md-10">
+				<div>
+					Табло взлетов
+				</div>
+			</div><!--
+			--><div class="col-xs-2 col-sm-2 col-md-2">
+				
+					<img class="img_mystyle" src="img/lk.png">
+				
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 padding_3vw">
+					<div id="FT-NoFlights">
+					</div>
+					<div id="Flights">
+							<table class="table table-striped font_style_my">
+								<tr>
+
+								</tr>
+								<tr class="ftRecord">
+									<th colspan="3"  >
+									
+									<div class="loader06"></div>
+									</th>
+								</tr>
+							</table>
+					</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div id="loadcircle_tablo" class="loadcircle_tablo">
+					<div class="rotating">
+						<img class="laodcircles-myclass" src="img/loadpage_loading_600.png">
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="bottom_form">
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu active_point_menu">
+					<a href="tablo.html">
+						<img class="align-middle height_9vw" src="img/1_tablo.png">
+					</a>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu">
+					<a href="map.html">
+						<img class="align-middle height_9vw" src="img/2_map.png">
+					</a>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu">
+					<a href="wether.html">
+						<img class="align-middle height_9vw" src="img/3_wether.png">
+					</a>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu">
+					<a href="sms.html">
+						<img class="align-middle height_9vw" src="img/4_sms.png">
+					</a>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu">
+					<a href="menu.html">
+						<img class="align-middle height_9vw" src="img/5_menu.png">
+					</a>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 middle_bottom_menu">
+					<a href="sos.html">
+						<img class="align-middle height_9vw" src="img/6_sos.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+
+		
+	</div> 
+    <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости --> 
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/tablo_time.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		window.onload = load_ftable();
+	</script>
+	<!-- <script src="js/screenorientation.js"></script>	 -->
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  </body>
+</html>

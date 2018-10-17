@@ -1,0 +1,270 @@
+
+
+/* color: blue - #305fd3 */
+/* color: light blue on login - #94b0f1 */
+
+body
+{
+	background-color: #305fd3;
+}
+
+@media only screen and (orientation: landscape){
+	.footer
+{
+	/* position: absolute; */
+	/* top: 100%; */
+	/* transform: translateY(-10vw); */
+	width: 100%;
+	color: white;
+	font-size: 3vw;
+	display: block;
+	
+
+}
+
+.container_middle
+{
+	/* position: absolute; */
+	/* top: 50%; */
+	/* transform: translateY(-50%); */
+	padding-right: 10vw;
+    padding-left: 10vw;
+	/* float: none; */
+	display: block;
+}
+}
+
+@media only screen and (orientation: portrait){
+	.footer
+{
+	position: absolute;
+	top: 100%;
+	transform: translateY(-10vw);
+	width: 100%;
+	color: white;
+	font-size: 3vw;
+	display: block;
+	
+
+}
+
+.container_middle
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 10vw;
+    padding-left: 10vw;
+	/* float: none; */
+	display: block;
+}
+}
+
+
+
+
+
+.login-page-01
+{
+	font-size: 10.5vw;
+	font-family: 'EuropeDemi';
+	font-weight: bold;
+	color: white;
+}
+
+.login-page-02
+{
+	font-size: 7vw;
+	font-family: 'Europe';
+	color: #94b0f1;
+	line-height: 1;
+	padding-bottom: 23px;
+}
+
+.input-my-style
+{
+	color: #1a1a1a;
+    height: 13vw;
+	padding: 2vw 4vw;
+	font-size: 4vw;
+	border-radius: 2vw;
+}
+
+.btn-my-style
+{
+	width: 100%;
+    height: 13vw;
+	color: white;
+    background-color: #204196;
+	padding: 2vw 4vw;
+	font-size: 4vw;
+	border-radius: 2vw;
+}
+
+.btn-my-style:visited .btn-my-style:active, .btn-my-style:hover, .btn-my-style:focus {
+    outline:0 none !important;
+    outline-offset: 0;
+}
+
+.label-my-style
+{
+	color: white;
+	padding-left: 9vw;
+}
+
+.container {
+    display: block;
+    position: relative;
+    /* padding-left: 35px; */
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    /* font-size: 22px; */
+	padding-right: 0px;
+	margin-bottom: 0;
+	font-weight: 400;
+    
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5vw;
+	width: 5vw;
+    background-color: #eee;
+	border-radius: 1vw;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+	left: 1.4vw;
+	top: 0.8vw;
+	width: 2vw;
+	height: 3vw;
+    border: solid white;
+    border-width: 0 1vw 1vw 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-group-my-style
+{
+	margin-bottom: 4vw;
+}
+
+.checkbox-my-style
+{
+	font-size: 4vw;
+	/* display: inline-block; */
+}
+
+.float-right
+{
+	/* float: right; */
+}
+
+.margin-top-5vw
+{
+	margin-top: 5vw;
+}
+
+.imgload-myclass
+{
+	width: 100%;
+	opacity: 0.5;
+}
+
+.textload
+{
+	text-align: center;
+}
+
+.textload span
+{
+	color: #fafaf7;
+    font-size: 5vh;
+    font-family: EuropeDemi;
+}
+
+.laodcircles-myclass
+{
+	/* position: absolute; */
+	width: 30vw;
+}
+
+.laodcircles-myclass-div
+{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  z-index: 999;
+}
